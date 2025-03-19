@@ -890,16 +890,6 @@ typedef LayerDefJson = {
 	@only("Tile layers, Auto-layers")
 	var tilesetDefUid: Null<Int>;
 
-	/** If the tiles are smaller or larger than the layer grid, the pivot value will be used to position the tile relatively its grid cell. **/
-	@only("Tile layers")
-	@internal
-	var tilePivotX: Float;
-
-	/** If the tiles are smaller or larger than the layer grid, the pivot value will be used to position the tile relatively its grid cell. **/
-	@only("Tile layers")
-	@internal
-	var tilePivotY: Float;
-
 	@added("1.5.0")
 	@internal
 	var biomeFieldUid: Null<Int>;
@@ -1416,6 +1406,9 @@ typedef TilesetDefJson = {
 
 	/** Distance in pixels from image borders **/
 	var padding: Int;
+	
+	var pivotX: Float;
+	var pivotY: Float;
 
 	/** Array of group of tiles selections, only meant to be used in the editor **/
 	@internal

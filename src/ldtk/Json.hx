@@ -1407,8 +1407,15 @@ typedef TilesetDefJson = {
 	/** Distance in pixels from image borders **/
 	var padding: Int;
 	
+	/** Pivot **/
 	var pivotX: Float;
 	var pivotY: Float;
+
+	/** Collision Metadata **/
+	var colMode: String;
+	var colWidth: Float;
+	var colHeight: Float;
+	var colRadius: Float;
 
 	/** Array of group of tiles selections, only meant to be used in the editor **/
 	@internal

@@ -482,6 +482,9 @@ typedef LayerInstanceJson = {
 	@internal
 	var seed: Int;
 
+	var zindex : Int;
+    var ysort : Bool;
+
 	/**
 		The list of IntGrid values, stored using coordinate ID system (refer to online documentation for more info about "Coordinate IDs")
 	**/
@@ -796,6 +799,10 @@ typedef LayerDefJson = {
 	/** Y offset of the layer, in pixels (IMPORTANT: this should be added to the `LayerInstance` optional offset) **/
 	@added("0.5.0")
 	var pxOffsetY: Int;
+
+    
+	var ysort : Bool;
+	var zindex : Int;
 
 	/**
 		Parallax horizontal factor (from -1 to 1, defaults to 0) which affects the scrolling speed of this layer, creating a fake 3D (parallax) effect.

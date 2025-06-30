@@ -33,6 +33,9 @@ class Layer {
 	/** Pixel-based layer height **/
 	public var pxHei : Int;
 
+	public var ysort : Bool;
+	public var zindex : Int;
+
 	/**
 		Pixel-based layer X offset (includes both instance and definition offsets)
 	**/

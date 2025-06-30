@@ -482,9 +482,6 @@ typedef LayerInstanceJson = {
 	@internal
 	var seed: Int;
 
-	var zindex : Int;
-    var ysort : Bool;
-
 	/**
 		The list of IntGrid values, stored using coordinate ID system (refer to online documentation for more info about "Coordinate IDs")
 	**/
